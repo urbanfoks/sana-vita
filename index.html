@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sana Vita — багатопрофільний медичний центр в Одесі</title>
+  <meta name="description" content="Sana Vita — багатопрофільний медичний центр в Одесі. Консультації, діагностика та малоінвазивне лікування в одному місці.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="header__top">
+    <div class="container header__top-inner">
+      <div class="header__info">
+        <span class="inline-icon"><img src="assets/icons/address.svg" alt="" width="18" height="18">Одеса, вул. Водопровідна, 2/5</span>
+        <span class="inline-icon"><img src="assets/icons/clock.svg" alt="" width="18" height="18">Пн–Пт 9:00–22:00, Сб 9:00–21:00</span>
+      </div>
+      <div class="header__contacts">
+        <a class="inline-icon header__phone" href="tel:+380930480303"><img src="assets/icons/phone.svg" alt="" width="18" height="18">+38 (093) 048 03 03</a>
+        <span class="header__divider" aria-hidden="true"></span>
+        <div class="lang">
+          <button class="lang__btn" type="button" aria-haspopup="listbox" aria-expanded="false">UA <img src="assets/icons/chevron-down.svg" alt="" width="16" height="16"></button>
+          <ul class="lang__list" role="listbox" hidden>
+            <li role="option" aria-selected="true">UA</li>
+            <li role="option">EN</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="container header__main-inner">
+      <a href="#" class="logo" aria-label="Sana Vita — на головну">
+        <img class="logo__p1" src="assets/icons/logo-1.svg" alt="">
+        <img class="logo__p2" src="assets/icons/logo-2.svg" alt="">
+        <img class="logo__p3" src="assets/icons/logo-3.svg" alt="">
+      </a>
+      <button class="burger" type="button" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="#directions">Напрями</a>
+        <a href="#doctors">Лікарі</a>
+        <a href="#services">Ціни</a>
+        <a href="#services">Чекапи</a>
+        <a href="#about">Про клініку</a>
+        <a href="#footer">Контакти</a>
+      </nav>
+      <a href="#booking" class="btn btn--primary header__cta">Записатись на прийом</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero container">
+  <div class="hero__text">
+    <h1 class="hero__title">Ваше здоров'я — наша турбота</h1>
+    <p class="hero__lead"><strong>Sana Vita</strong> — багатопрофільний медичний центр в Одесі. Консультації, діагностика та малоінвазивне лікування в одному місці.</p>
+    <div class="hero__actions">
+      <a href="#booking" class="btn btn--primary">Записатись на прийом</a>
+      <a href="#booking" class="btn btn--secondary">Передзвоніть мені</a>
+    </div>
+    <div class="usp">
+      <span class="usp__icon"><img src="assets/icons/price.svg" alt="" width="22" height="22"></span>
+      <div>
+        <p class="usp__title">Прозорі ціни</p>
+        <p class="usp__text">Без прихованих платежів — вартість відома до прийому</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-slider" data-hero-slider>
+    <div class="hero-slider__viewport">
+      <div class="hero-slider__track">
+        <div class="hero-slide">
+          <img class="hero-slide__img hero-slide__img--team" src="assets/img/hero-1.jpg" alt="Команда лікарів Sana Vita">
+        </div>
+        <div class="hero-slide">
+          <img class="hero-slide__img" style="--x:-200px" src="assets/img/hero-2.jpg" alt="">
+          <div class="hero-slide__shade"></div>
+          <div class="hero-slide__content">
+            <span class="badge">Безоплатно</span>
+            <div>
+              <p class="hero-slide__title">Скринінг здоров'я 40+</p>
+              <p class="hero-slide__sub">2 000 грн від держави через Дію</p>
+            </div>
+            <a href="#" class="hero-slide__more">Детальніше <img src="assets/icons/arrow-right-white.svg" alt="" width="18" height="18"></a>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <img class="hero-slide__img" style="--x:-109px" src="assets/img/hero-3.jpg" alt="">
+          <div class="hero-slide__shade"></div>
+          <div class="hero-slide__content">
+            <span class="badge">−18%</span>
+            <div>
+              <p class="hero-slide__title">Жіночий check-up</p>
+              <p class="hero-slide__sub">3 400 грн замість 4 150 грн</p>
+            </div>
+            <a href="#" class="hero-slide__more">Детальніше <img src="assets/icons/arrow-right-white.svg" alt="" width="18" height="18"></a>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <img class="hero-slide__img" style="--x:-109px" src="assets/img/hero-4.jpg" alt="">
+          <div class="hero-slide__shade"></div>
+          <div class="hero-slide__content">
+            <span class="badge">−23%</span>
+            <div>
+              <p class="hero-slide__title">Check-up органів травлення</p>
+              <p class="hero-slide__sub">4 350 грн замість 5 680 грн</p>
+            </div>
+            <a href="#" class="hero-slide__more">Детальніше <img src="assets/icons/arrow-right-white.svg" alt="" width="18" height="18"></a>
+          </div>
+        </div>
+        <div class="hero-slide">
+          <img class="hero-slide__img" style="--x:-109px" src="assets/img/hero-5.jpg" alt="">
+          <div class="hero-slide__shade"></div>
+          <div class="hero-slide__content">
+            <span class="badge">−10%</span>
+            <div>
+              <p class="hero-slide__title">Декларація з сімейним лікарем</p>
+              <p class="hero-slide__sub">Безоплатно за програмою НСЗУ + знижка на всі послуги</p>
+            </div>
+            <a href="#" class="hero-slide__more">Детальніше <img src="assets/icons/arrow-right-white.svg" alt="" width="18" height="18"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-slider__controls">
+      <div class="hero-slider__progress">
+        <button type="button" aria-label="Слайд 1"></button>
+        <button type="button" aria-label="Слайд 2"></button>
+        <button type="button" aria-label="Слайд 3"></button>
+        <button type="button" aria-label="Слайд 4"></button>
+        <button type="button" aria-label="Слайд 5"></button>
+      </div>
+      <button class="hero-slider__pause" type="button" aria-label="Пауза" aria-pressed="false"><span></span><span></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="container section-head">
+    <h2 class="h2">Наші послуги</h2>
+    <div class="section-head__right">
+      <a href="#" class="link-arrow">Усі послуги <img src="assets/icons/arrow-right-accent.svg" alt="" width="18" height="18"></a>
+      <div class="arrows">
+        <button class="arrow" type="button" data-dir="-1" aria-label="Назад" disabled><img src="assets/icons/arrow-left.svg" alt="" width="20" height="20"></button>
+        <button class="arrow" type="button" data-dir="1" aria-label="Вперед"><img src="assets/icons/arrow-right.svg" alt="" width="20" height="20"></button>
+      </div>
+    </div>
+  </div>
+  <div class="services__track" data-services-track>
+    <a href="#" class="service-card">
+      <img src="assets/img/service-1.jpg" alt="УЗД-діагностика" loading="lazy">
+      <h3 class="h3">УЗД-діагностика</h3>
+      <p>Висновок лікаря в день обстеження</p>
+    </a>
+    <a href="#" class="service-card">
+      <img src="assets/img/service-2.jpg" alt="Лікування геморою" loading="lazy">
+      <h3 class="h3">Лікування геморою</h3>
+      <p>Консультація проктолога — 900 грн</p>
+    </a>
+    <a href="#" class="service-card">
+      <img src="assets/img/service-3.jpg" alt="Лабораторні аналізи" loading="lazy">
+      <h3 class="h3">Лабораторні аналізи</h3>
+      <p>659 видів аналізів</p>
+    </a>
+    <a href="#" class="service-card">
+      <img src="assets/img/service-4.jpg" alt="Гінекологія" loading="lazy">
+      <h3 class="h3">Гінекологія</h3>
+      <p>Консультація, огляд і план лікування</p>
+    </a>
+    <a href="#" class="service-card">
+      <img src="assets/img/service-5.jpg" alt="Денний стаціонар" loading="lazy">
+      <h3 class="h3">Денний стаціонар</h3>
+      <p>Відновлення після малоінвазивних процедур</p>
+    </a>
+  </div>
+</section>
+
+<!-- ============ TASKS ============ -->
+<section class="section section--subtle">
+  <div class="container">
+    <h2 class="h2 section__title">Вирішимо всі питання</h2>
+    <div class="tiles">
+      <div class="tile">
+        <div class="tile__top">
+          <span class="icon-circle icon-circle--52"><img src="assets/icons/task-doctor.svg" alt="" width="26" height="26"></span>
+          <div>
+            <h3 class="h3">Знайти лікаря</h3>
+            <p class="body2">Оберіть спеціаліста за напрямом і досвідом</p>
+          </div>
+        </div>
+        <a href="#doctors" class="btn btn--outline btn--block">Обрати лікаря</a>
+      </div>
+      <div class="tile">
+        <div class="tile__top">
+          <span class="icon-circle icon-circle--52"><img src="assets/icons/task-exam.svg" alt="" width="26" height="26"></span>
+          <div>
+            <h3 class="h3">Пройти обстеження</h3>
+            <p class="body2">УЗД, аналізи та інша діагностика в одній клініці</p>
+          </div>
+        </div>
+        <a href="#services" class="btn btn--outline btn--block">Обрати обстеження</a>
+      </div>
+      <div class="tile">
+        <div class="tile__top">
+          <span class="icon-circle icon-circle--52"><img src="assets/icons/task-price.svg" alt="" width="26" height="26"></span>
+          <div>
+            <h3 class="h3">Дізнатися вартість</h3>
+            <p class="body2">Прозорі ціни — без прихованих платежів</p>
+          </div>
+        </div>
+        <a href="#services" class="btn btn--outline btn--block">Переглянути ціни</a>
+      </div>
+      <div class="tile">
+        <div class="tile__top">
+          <span class="icon-circle icon-circle--52"><img src="assets/icons/task-consult.svg" alt="" width="26" height="26"></span>
+          <div>
+            <h3 class="h3">Отримати консультацію</h3>
+            <p class="body2">Запишіться онлайн або замовте зворотний дзвінок</p>
+          </div>
+        </div>
+        <a href="#booking" class="btn btn--outline btn--block">Записатись на прийом</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIRECTIONS ============ -->
+<section class="section" id="directions">
+  <div class="container">
+    <h2 class="h2 section__title">Напрями</h2>
+    <div class="directions">
+      <a href="#" class="direction"><img src="assets/icons/dir-1.svg" alt="" width="40" height="40"><span>Проктологія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-2.svg" alt="" width="40" height="40"><span>Гінекологія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-3.svg" alt="" width="40" height="40"><span>Дерматологія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-4.svg" alt="" width="40" height="40"><span>Урологія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-5.svg" alt="" width="40" height="40"><span>Судинна хірургія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-6.svg" alt="" width="40" height="40"><span>УЗД-діагностика</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-7.svg" alt="" width="40" height="40"><span>Фізіотерапія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-8.svg" alt="" width="40" height="40"><span>Хірургія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-9.svg" alt="" width="40" height="40"><span>Гастроентерологія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-10.svg" alt="" width="40" height="40"><span>Стоматологія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-11.svg" alt="" width="40" height="40"><span>Сімейна медицина</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-12.svg" alt="" width="40" height="40"><span>Неврологія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-13.svg" alt="" width="40" height="40"><span>Лабораторія</span></a>
+      <a href="#" class="direction"><img src="assets/icons/dir-14.svg" alt="" width="40" height="40"><span>Денний стаціонар</span></a>
+      <a href="#booking" class="direction direction--help">
+        <span>Не знаєте, до кого звернутися?</span>
+        <span class="direction__cta">Передзвоніть мені →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCTORS ============ -->
+<section class="section section--subtle" id="doctors">
+  <div class="container">
+    <div class="section-head section-head--top">
+      <div>
+        <h2 class="h2">Висококваліфіковані лікарі</h2>
+        <p class="lead section-head__sub">Лікарі вищої та першої категорії зі стажем від 10 років</p>
+      </div>
+      <a href="#" class="link-arrow">Усі лікарі <img src="assets/icons/arrow-right-accent.svg" alt="" width="18" height="18"></a>
+    </div>
+    <div class="doctors">
+      <article class="doctor">
+        <a href="#" class="doctor__photo"><img src="assets/img/doctor-1.jpg" alt="Спільний Віталій Ігорович" loading="lazy"></a>
+        <div class="doctor__info">
+          <a href="#" class="doctor__name">Спільний Віталій Ігорович</a>
+          <p class="doctor__role">Лікар-проктолог</p>
+          <p class="doctor__exp">Стаж 11 років</p>
+        </div>
+        <a href="#booking" class="btn btn--primary btn--block btn--sm">Записатись на прийом</a>
+      </article>
+      <article class="doctor">
+        <a href="#" class="doctor__photo"><img src="assets/img/doctor-2.jpg" alt="Головина Світлана Вікторівна" loading="lazy"></a>
+        <div class="doctor__info">
+          <a href="#" class="doctor__name">Головина Світлана Вікторівна</a>
+          <p class="doctor__role">Лікар-гастроентеролог</p>
+          <p class="doctor__exp">Стаж 23 роки</p>
+        </div>
+        <a href="#booking" class="btn btn--primary btn--block btn--sm">Записатись на прийом</a>
+      </article>
+      <article class="doctor">
+        <a href="#" class="doctor__photo"><img src="assets/img/doctor-3.jpg" alt="Вилегжанин Дмитро Сергійович" loading="lazy"></a>
+        <div class="doctor__info">
+          <a href="#" class="doctor__name">Вилегжанин Дмитро Сергійович</a>
+          <p class="doctor__role">Лікар-проктолог</p>
+          <p class="doctor__exp">Стаж 13 років</p>
+        </div>
+        <a href="#booking" class="btn btn--primary btn--block btn--sm">Записатись на прийом</a>
+      </article>
+      <article class="doctor">
+        <a href="#" class="doctor__photo"><img src="assets/img/doctor-4.jpg" alt="Бондаревич Світлана Майславівна" loading="lazy"></a>
+        <div class="doctor__info">
+          <a href="#" class="doctor__name">Бондаревич Світлана Майславівна</a>
+          <p class="doctor__role">Лікар-уролог, вища категорія</p>
+          <p class="doctor__exp">Стаж 39 років</p>
+        </div>
+        <a href="#booking" class="btn btn--primary btn--block btn--sm">Записатись на прийом</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="about__top">
+      <div class="about__intro">
+        <h2 class="h2">Про клініку</h2>
+        <p class="lead">Sana Vita — багатопрофільний медичний центр в Одесі. Консультації, діагностика та малоінвазивне лікування в одному місці, з турботою про ваш комфорт.</p>
+        <a href="#" class="btn btn--outline">Детальніше про клініку</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><p class="stat__num">5 842</p><p class="body2">пацієнтів за рік</p></div>
+        <div class="stat"><p class="stat__num">1 955</p><p class="body2">операцій виконано</p></div>
+        <div class="stat"><p class="stat__num">19</p><p class="body2">лікарів у команді</p></div>
+        <div class="stat"><p class="stat__num">659</p><p class="body2">видів аналізів у лабораторії</p></div>
+      </div>
+    </div>
+
+    <div class="journey">
+      <div class="journey__head">
+        <h3 class="h3">Від діагностики до лікування — в одній клініці</h3>
+        <p class="body2">Не потрібно шукати окремо лабораторію, УЗД чи хірурга: усе необхідне — тут.</p>
+      </div>
+      <ol class="steps">
+        <li class="step">
+          <div class="step__marker"><span class="icon-circle icon-circle--56"><img src="assets/icons/step-consult.svg" alt="" width="26" height="26"></span><span class="step__line"></span></div>
+          <p class="step__title">Консультація</p>
+          <p class="body2">Огляд лікаря і план обстеження — спокійно й конфіденційно.</p>
+        </li>
+        <li class="step">
+          <div class="step__marker"><span class="icon-circle icon-circle--56"><img src="assets/icons/step-diag.svg" alt="" width="26" height="26"></span><span class="step__line"></span></div>
+          <p class="step__title">Діагностика</p>
+          <p class="body2">УЗД та лабораторні аналізи без поїздок в інші місця.</p>
+        </li>
+        <li class="step">
+          <div class="step__marker"><span class="icon-circle icon-circle--56 icon-circle--flip"><img src="assets/icons/step-treat.svg" alt="" width="26" height="26"></span><span class="step__line"></span></div>
+          <p class="step__title">Лікування</p>
+          <p class="body2">Сучасні безопераційні та малоінвазивні методи, денний стаціонар.</p>
+        </li>
+        <li class="step">
+          <div class="step__marker"><span class="icon-circle icon-circle--56"><img src="assets/icons/step-recovery.svg" alt="" width="26" height="26"></span></div>
+          <p class="step__title">Відновлення</p>
+          <p class="body2">Фізіотерапія та контроль лікаря після лікування.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="reviews">
+      <div class="reviews__head">
+        <div>
+          <h3 class="h3">Відгуки пацієнтів</h3>
+          <div class="rating">
+            <span class="rating__num">5.0</span>
+            <div>
+              <div class="stars" aria-label="5 з 5"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""></div>
+              <p class="caption muted">424 відгуки на Doc.ua</p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn btn--outline">Усі відгуки</a>
+      </div>
+      <div class="reviews__list">
+        <figure class="review">
+          <blockquote>«В клініці дуже доброзичливий і ввічливий адміністратор, клініка мені сподобалася»</blockquote>
+          <figcaption class="review__author">
+            <span class="review__avatar">І</span>
+            <div>
+              <div class="review__name">Інна <span class="stars" aria-label="5 з 5"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""></span></div>
+              <p class="caption muted">Doc.ua · вересень 2026</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>«Все пройшло так, як і треба, результативно. Мені все сподобалося, все чудово.»</blockquote>
+          <figcaption class="review__author">
+            <span class="review__avatar">М</span>
+            <div>
+              <div class="review__name">Марина <span class="stars" aria-label="5 з 5"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""></span></div>
+              <p class="caption muted">Doc.ua · лютий 2026</p>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="review">
+          <blockquote>«Чудовий лікар, мені все сподобалось, записалась ще до нього на візит»</blockquote>
+          <figcaption class="review__author">
+            <span class="review__avatar">С</span>
+            <div>
+              <div class="review__name">Сніжана <span class="stars" aria-label="5 з 5"><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""><img src="assets/icons/star.svg" alt=""></span></div>
+              <p class="caption muted">Doc.ua · листопад 2025</p>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="booking-wrap" id="booking">
+  <div class="container">
+    <div class="booking">
+      <div class="booking__text">
+        <div class="avatars">
+          <img src="assets/img/avatar-1.png" alt="" width="62" height="62">
+          <img src="assets/img/avatar-2.png" alt="" width="62" height="62">
+          <img src="assets/img/avatar-3.png" alt="" width="62" height="62">
+        </div>
+        <h2 class="h2">Запишіться на прийом</h2>
+        <p class="lead">Не знаєте, до якого лікаря звернутися? Адміністратор зателефонує, допоможе обрати спеціаліста й зручний час.</p>
+      </div>
+      <form class="form" data-booking-form novalidate>
+        <div class="form__row">
+          <label class="field">
+            <span class="field__label">Ім'я та прізвище</span>
+            <input type="text" name="name" placeholder="Як до вас звертатися" required autocomplete="name">
+          </label>
+          <label class="field">
+            <span class="field__label">Телефон</span>
+            <input type="tel" name="phone" placeholder="+38 (0__) ___ __ __" required autocomplete="tel">
+          </label>
+        </div>
+        <button type="button" class="form__toggle" aria-expanded="false" aria-controls="datetime">Обрати зручну дату й час <img src="assets/icons/chevron-accent.svg" alt="" width="20" height="20"></button>
+        <div class="form__row" id="datetime" hidden>
+          <label class="field">
+            <span class="field__label">Дата</span>
+            <input type="date" name="date">
+          </label>
+          <label class="field">
+            <span class="field__label">Час</span>
+            <input type="time" name="time" min="09:00" max="22:00">
+          </label>
+        </div>
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          <span class="consent__box" aria-hidden="true"></span>
+          <span>Погоджуюся з <a href="#">політикою конфіденційності</a> та обробкою персональних даних</span>
+        </label>
+        <div class="form__submit">
+          <button type="submit" class="btn btn--primary">Записатись на прийом</button>
+          <p class="body2">Або зателефонуйте: <a href="tel:+380930480303" class="form__phone">+38 (093) 048 03 03</a></p>
+        </div>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--lg" aria-label="Sana Vita">
+          <img class="logo__p1" src="assets/icons/logo-w-1.svg" alt="">
+          <img class="logo__p2" src="assets/icons/logo-w-2.svg" alt="">
+          <img class="logo__p3" src="assets/icons/logo-w-3.svg" alt="">
+        </a>
+        <p class="footer__muted-lg">Багатопрофільний медичний центр в Одесі</p>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__item">
+          <img src="assets/icons/phone-w.svg" alt="" width="20" height="20">
+          <div class="footer__phones">
+            <a href="tel:+380930480303">+38 (093) 048 03 03</a>
+            <a href="tel:+380675954103">+38 (067) 595 41 03</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <img src="assets/icons/mail-w.svg" alt="" width="20" height="20">
+          <a href="mailto:director@sanavita.com.ua">director@sanavita.com.ua</a>
+        </div>
+        <div class="footer__item">
+          <img src="assets/icons/pin-w.svg" alt="" width="20" height="20">
+          <div>
+            <p>Одеса, вул. Водопровідна, 2/5</p>
+            <a href="https://maps.google.com/?q=Одеса,+вул.+Водопровідна,+2/5" target="_blank" rel="noopener" class="footer__map">Подивитися на мапі →</a>
+          </div>
+        </div>
+      </div>
+      <nav class="footer__col" aria-label="Пацієнтам">
+        <p class="footer__heading">ПАЦІЄНТАМ</p>
+        <a href="#directions">Напрями</a>
+        <a href="#doctors">Лікарі</a>
+        <a href="#services">Ціни</a>
+        <a href="#services">Чекапи</a>
+      </nav>
+      <nav class="footer__col" aria-label="Клініка">
+        <p class="footer__heading">КЛІНІКА</p>
+        <a href="#about">Про клініку</a>
+        <a href="#">Ліцензія та документи</a>
+        <a href="#footer">Контакти</a>
+      </nav>
+    </div>
+    <div class="footer__legal">
+      <div>
+        <p>ТОВ «САНА ВІТА МЕДІКАЛ», ЄДРПОУ 44018609</p>
+        <p>Ліцензія МОЗ України на медичну практику: реєстраційне досьє № 4398/21/М від 05.10.2021</p>
+      </div>
+      <p class="footer__disclaimer">Інформація на сайті має довідковий характер і не замінює консультацію лікаря.</p>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__policies"><a href="#">Політика конфіденційності</a><a href="#">Cookie</a></div>
+      <p>© 2021–2026 Sana Vita</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
