@@ -220,6 +220,7 @@ document.querySelectorAll('[data-booking-form]').forEach(form => {
   more.addEventListener('click', () => {
     const open = more.getAttribute('aria-expanded') !== 'true';
     form.querySelectorAll('[data-extra]').forEach(el => { el.hidden = !open; });
+    more.closest('.bk-list').classList.toggle('is-all', open);
     more.setAttribute('aria-expanded', String(open));
     more.firstChild.textContent = open ? 'Згорнути список ' : 'Показати всіх лікарів ';
   });
