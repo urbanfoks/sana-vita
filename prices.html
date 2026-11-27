@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ціни на послуги — Sana Vita, Одеса</title>
+  <meta name="description" content="Перелік послуг медичного центру Sana Vita та їх вартість. Прозорі ціни — без прихованих платежів.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Р—РіРµРЅРµСЂРѕРІР°РЅРѕ Р· src/ СЃРєСЂРёРїС‚РѕРј build.ps1 вЂ” СЂРµРґР°РіСѓР№С‚Рµ С„Р°Р№Р»Рё РІ src/ -->
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="header__top">
+    <div class="container header__top-inner">
+      <div class="header__info">
+        <span class="inline-icon"><img src="assets/icons/address.svg" alt="" width="18" height="18">Одеса, вул. Водопровідна, 2/5</span>
+        <span class="inline-icon"><img src="assets/icons/clock.svg" alt="" width="18" height="18">Пн–Пт 9:00–22:00, Сб 9:00–21:00</span>
+      </div>
+      <div class="header__contacts">
+        <a class="inline-icon header__phone" href="tel:+380930480303"><img src="assets/icons/phone.svg" alt="" width="18" height="18">+38 (093) 048 03 03</a>
+        <span class="header__divider" aria-hidden="true"></span>
+        <div class="lang">
+          <button class="lang__btn" type="button" aria-haspopup="listbox" aria-expanded="false">UA <img src="assets/icons/chevron-down.svg" alt="" width="16" height="16"></button>
+          <ul class="lang__list" role="listbox" hidden>
+            <li role="option" aria-selected="true">UA</li>
+            <li role="option">RU</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="container header__main-inner">
+      <a href="index.html" class="logo" aria-label="Sana Vita — на головну">
+        <img class="logo__p1" src="assets/icons/logo-1.svg" alt="">
+        <img class="logo__p2" src="assets/icons/logo-2.svg" alt="">
+        <img class="logo__p3" src="assets/icons/logo-3.svg" alt="">
+      </a>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="index.html#directions" data-nav="directions">Напрями</a>
+        <a href="doctor.html" data-nav="doctor">Лікарі</a>
+        <a href="prices.html" data-nav="prices" aria-current="page">Ціни</a>
+        <a href="prices.html" data-nav="checkups">Чекапи</a>
+        <a href="index.html#about" data-nav="about">Про клініку</a>
+        <a href="contacts.html" data-nav="contacts">Контакти</a>
+      </nav>
+      <a href="booking.html" class="btn btn--primary header__cta">Записатись на прийом</a>
+      <div class="header__mobile-actions">
+        <a class="icon-btn" href="tel:+380930480303" aria-label="Зателефонувати"><img src="assets/icons/phone.svg" alt="" width="21" height="21"></a>
+        <button class="icon-btn burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
+          <img class="burger__open" src="assets/icons/menu.svg" alt="" width="22" height="22">
+          <img class="burger__close" src="assets/icons/close.svg" alt="" width="22" height="22">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="mobile-menu__lang">
+      <span>Мова сайту</span>
+      <div class="seg" role="group" aria-label="Мова сайту">
+        <button type="button" class="seg__item is-active" aria-pressed="true">UA</button>
+        <button type="button" class="seg__item" aria-pressed="false">RU</button>
+      </div>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Мобільне меню">
+      <a href="index.html#directions">Напрями</a>
+      <a href="doctor.html">Лікарі</a>
+      <a href="prices.html">Ціни</a>
+      <a href="prices.html">Чекапи</a>
+      <a href="booking.html">Укласти декларацію</a>
+      <a href="index.html#about">Про клініку</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="mobile-menu__phones">
+      <a href="tel:+380930480303"><span>+38 (093) 048 03 03</span><span class="mobile-menu__call"><img src="assets/icons/phone-white.svg" alt="" width="18" height="18"></span></a>
+      <a href="tel:+380675954103"><span>+38 (067) 595 41 03</span><span class="mobile-menu__call"><img src="assets/icons/phone-white.svg" alt="" width="18" height="18"></span></a>
+    </div>
+    <div class="mobile-menu__actions">
+      <a href="booking.html" class="btn btn--primary btn--block">Записатись на прийом</a>
+      <a href="#booking" class="btn btn--secondary btn--block" data-callback>Передзвоніть мені</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="prices container">
+  <nav class="crumbs" aria-label="Хлібні крихти">
+    <a href="index.html">Головна</a>
+    <img src="assets/icons/chevron-crumb.svg" alt="" width="12" height="12">
+    <span aria-current="page">Ціни</span>
+  </nav>
+  <div class="page-head">
+    <h1 class="page-title">Перелік послуг та їх вартість</h1>
+    <p class="lead"><strong>Прозорі ціни — без прихованих платежів.</strong> Вартість на сайті та в клініці однакова.</p>
+    <p class="body2 muted">Ціни актуальні на жовтень 2026 року. Остаточну вартість визначає лікар.</p>
+  </div>
+
+  <div class="prices__body">
+    <nav class="toc" aria-label="Розділи прайсу">
+      <p class="toc__title">РОЗДІЛИ</p>
+      <a href="#p-proctology" class="is-active">Проктологія</a>
+      <a href="#p-gynecology">Гінекологія</a>
+      <a href="#p-derma">Дерматологія та трихологія</a>
+      <a href="#p-urology">Урологія</a>
+      <a href="#p-vascular">Судинна хірургія</a>
+      <a href="#p-usd">УЗД діагностика</a>
+      <a href="#p-physio">Фізпроцедури</a>
+      <a href="#p-surgery">Хірургія</a>
+      <a href="#p-gastro">Гастроентерологія</a>
+      <a href="#p-dental">Стоматологія</a>
+    </nav>
+
+    <div class="accordion" data-accordion>
+      <details class="acc" id="p-proctology" open>
+        <summary class="acc__head">Проктологія</summary>
+        <div class="acc__body">
+          <div class="price-row"><div><p>Консультація проктолога (огляд, аноскопія, ректороманоскопія)</p><p class="price-row__price">900 грн</p></div><a href="booking.html" class="price-row__btn" aria-label="Записатись: консультація проктолога">Записатись зараз</a></div>
+          <div class="price-row"><div><p>Безопераційне лікування геморою 2 стадії (1 вузол) латексне лігування</p><p class="price-row__price">від 5 500 грн</p></div><a href="booking.html" class="price-row__btn" aria-label="Записатись: лікування геморою 2 стадії">Записатись зараз</a></div>
+          <div class="price-row"><div><p>Безопераційне лікування геморою 3 стадії (1 вузол) латексне лігування</p><p class="price-row__price">від 5 900 грн</p></div><a href="booking.html" class="price-row__btn" aria-label="Записатись: лікування геморою 3 стадії">Записатись зараз</a></div>
+          <div class="price-row"><div><p>Лазерне видалення гемороїдального вузла (1 вузол)</p><p class="price-row__price">від 9 800 грн</p></div><a href="booking.html" class="price-row__btn" aria-label="Записатись: лазерне видалення вузла">Записатись зараз</a></div>
+          <div class="price-row"><div><p>Лікування гострого тромбозу гемороїдального вузла (1 вузол)</p><p class="price-row__price">від 9 800 грн</p></div><a href="booking.html" class="price-row__btn" aria-label="Записатись: лікування тромбозу вузла">Записатись зараз</a></div>
+          <div class="price-row"><div><p>Гемороїдектомія за Мілліганом — Морганом</p><p class="price-row__price">34 500 грн</p></div><a href="booking.html" class="price-row__btn" aria-label="Записатись: гемороїдектомія">Записатись зараз</a></div>
+          <div class="price-row"><div><p>Ботулінотерапія в проктології (хронічна тріщина, хронічний свербіж, підвищена пітливість періанальної області)</p><p class="price-row__price">29 700 грн</p></div><a href="booking.html" class="price-row__btn" aria-label="Записатись: ботулінотерапія">Записатись зараз</a></div>
+        </div>
+      </details>
+      <details class="acc" id="p-gynecology"><summary class="acc__head">Гінекологія</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-derma"><summary class="acc__head">Дерматологія та трихологія</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-urology"><summary class="acc__head">Урологія</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-vascular"><summary class="acc__head">Судинна хірургія</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-usd"><summary class="acc__head">УЗД діагностика</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-physio"><summary class="acc__head">Фізпроцедури</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-surgery"><summary class="acc__head">Хірургія</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-gastro"><summary class="acc__head">Гастроентерологія</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+      <details class="acc" id="p-dental"><summary class="acc__head">Стоматологія</summary><div class="acc__body"><p class="acc__note">Вартість послуг розділу уточнюйте в адміністратора: <a href="tel:+380930480303">+38 (093) 048 03 03</a></p></div></details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKING ============ -->
+<section class="booking-wrap" id="booking">
+  <div class="container">
+    <div class="booking">
+      <div class="booking__text">
+        <div class="avatars">
+          <img src="assets/img/avatar-1.png" alt="" width="62" height="62">
+          <img src="assets/img/avatar-2.png" alt="" width="62" height="62">
+          <img src="assets/img/avatar-3.png" alt="" width="62" height="62">
+        </div>
+        <h2 class="h2">Запишіться на прийом</h2>
+        <p class="lead">Не знаєте, до якого лікаря звернутися? Адміністратор зателефонує, допоможе обрати спеціаліста й зручний час.</p>
+      </div>
+      <form class="form" data-booking-form novalidate>
+        <div class="form__row">
+          <label class="field">
+            <span class="field__label">Ім'я та прізвище</span>
+            <input type="text" name="name" placeholder="Як до вас звертатися" required autocomplete="name">
+          </label>
+          <label class="field">
+            <span class="field__label">Телефон</span>
+            <input type="tel" name="phone" placeholder="+38 (0__) ___ __ __" required autocomplete="tel">
+          </label>
+        </div>
+        <button type="button" class="form__toggle" aria-expanded="false" aria-controls="datetime">Обрати зручну дату й час <img src="assets/icons/chevron-accent.svg" alt="" width="20" height="20"></button>
+        <div class="form__row" id="datetime" hidden>
+          <label class="field">
+            <span class="field__label">Дата</span>
+            <input type="date" name="date">
+          </label>
+          <label class="field">
+            <span class="field__label">Час</span>
+            <input type="time" name="time" min="09:00" max="22:00">
+          </label>
+        </div>
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          <span class="consent__box" aria-hidden="true"></span>
+          <span>Погоджуюся з <a href="#">політикою конфіденційності</a> та обробкою персональних даних</span>
+        </label>
+        <div class="form__submit">
+          <button type="submit" class="btn btn--primary">Записатись на прийом</button>
+          <p class="body2">Або зателефонуйте: <a href="tel:+380930480303" class="form__phone">+38 (093) 048 03 03</a></p>
+        </div>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--lg" aria-label="Sana Vita">
+          <img class="logo__p1" src="assets/icons/logo-w-1.svg" alt="">
+          <img class="logo__p2" src="assets/icons/logo-w-2.svg" alt="">
+          <img class="logo__p3" src="assets/icons/logo-w-3.svg" alt="">
+        </a>
+        <p class="footer__muted-lg">Багатопрофільний медичний центр в Одесі</p>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__item">
+          <img src="assets/icons/phone-w.svg" alt="" width="20" height="20">
+          <div class="footer__phones">
+            <a href="tel:+380930480303">+38 (093) 048 03 03</a>
+            <a href="tel:+380675954103">+38 (067) 595 41 03</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <img src="assets/icons/mail-w.svg" alt="" width="20" height="20">
+          <a href="mailto:director@sanavita.com.ua">director@sanavita.com.ua</a>
+        </div>
+        <div class="footer__item">
+          <img src="assets/icons/pin-w.svg" alt="" width="20" height="20">
+          <div>
+            <p>Одеса, вул. Водопровідна, 2/5</p>
+            <a href="contacts.html#map" class="footer__map">Подивитися на мапі →</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <nav class="footer__col" aria-label="Пацієнтам">
+          <p class="footer__heading">ПАЦІЄНТАМ</p>
+          <a href="index.html#directions">Напрями</a>
+          <a href="doctor.html">Лікарі</a>
+          <a href="prices.html">Ціни</a>
+          <a href="prices.html">Чекапи</a>
+        </nav>
+        <nav class="footer__col" aria-label="Клініка">
+          <p class="footer__heading">КЛІНІКА</p>
+          <a href="index.html#about">Про клініку</a>
+          <a href="#">Ліцензія та документи</a>
+          <a href="contacts.html">Контакти</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <div>
+        <p>ТОВ «САНА ВІТА МЕДІКАЛ», ЄДРПОУ 44018609</p>
+        <p>Ліцензія МОЗ України на медичну практику: реєстраційне досьє № 4398/21/М від 05.10.2021</p>
+      </div>
+      <p class="footer__disclaimer">Інформація на сайті має довідковий характер і не замінює консультацію лікаря.</p>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__policies"><a href="#">Політика конфіденційності</a><a href="#">Cookie</a></div>
+      <p>© 2021–2026 Sana Vita</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Запис на прийом онлайн — Sana Vita</title>
+  <meta name="description" content="Оберіть лікаря, дату й зручний час. Адміністратор медичного центру Sana Vita зателефонує, щоб підтвердити запис.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Р—РіРµРЅРµСЂРѕРІР°РЅРѕ Р· src/ СЃРєСЂРёРїС‚РѕРј build.ps1 вЂ” СЂРµРґР°РіСѓР№С‚Рµ С„Р°Р№Р»Рё РІ src/ -->
+<!-- ============ HEADER ============ -->
+<header class="header">
+  <div class="header__top">
+    <div class="container header__top-inner">
+      <div class="header__info">
+        <span class="inline-icon"><img src="assets/icons/address.svg" alt="" width="18" height="18">Одеса, вул. Водопровідна, 2/5</span>
+        <span class="inline-icon"><img src="assets/icons/clock.svg" alt="" width="18" height="18">Пн–Пт 9:00–22:00, Сб 9:00–21:00</span>
+      </div>
+      <div class="header__contacts">
+        <a class="inline-icon header__phone" href="tel:+380930480303"><img src="assets/icons/phone.svg" alt="" width="18" height="18">+38 (093) 048 03 03</a>
+        <span class="header__divider" aria-hidden="true"></span>
+        <div class="lang">
+          <button class="lang__btn" type="button" aria-haspopup="listbox" aria-expanded="false">UA <img src="assets/icons/chevron-down.svg" alt="" width="16" height="16"></button>
+          <ul class="lang__list" role="listbox" hidden>
+            <li role="option" aria-selected="true">UA</li>
+            <li role="option">RU</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="container header__main-inner">
+      <a href="index.html" class="logo" aria-label="Sana Vita — на головну">
+        <img class="logo__p1" src="assets/icons/logo-1.svg" alt="">
+        <img class="logo__p2" src="assets/icons/logo-2.svg" alt="">
+        <img class="logo__p3" src="assets/icons/logo-3.svg" alt="">
+      </a>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="index.html#directions" data-nav="directions">Напрями</a>
+        <a href="doctor.html" data-nav="doctor">Лікарі</a>
+        <a href="prices.html" data-nav="prices">Ціни</a>
+        <a href="prices.html" data-nav="checkups">Чекапи</a>
+        <a href="index.html#about" data-nav="about">Про клініку</a>
+        <a href="contacts.html" data-nav="contacts">Контакти</a>
+      </nav>
+      <a href="booking.html" class="btn btn--primary header__cta">Записатись на прийом</a>
+      <div class="header__mobile-actions">
+        <a class="icon-btn" href="tel:+380930480303" aria-label="Зателефонувати"><img src="assets/icons/phone.svg" alt="" width="21" height="21"></a>
+        <button class="icon-btn burger" type="button" aria-label="Відкрити меню" aria-expanded="false" aria-controls="mobile-menu">
+          <img class="burger__open" src="assets/icons/menu.svg" alt="" width="22" height="22">
+          <img class="burger__close" src="assets/icons/close.svg" alt="" width="22" height="22">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <div class="mobile-menu__lang">
+      <span>Мова сайту</span>
+      <div class="seg" role="group" aria-label="Мова сайту">
+        <button type="button" class="seg__item is-active" aria-pressed="true">UA</button>
+        <button type="button" class="seg__item" aria-pressed="false">RU</button>
+      </div>
+    </div>
+    <nav class="mobile-menu__nav" aria-label="Мобільне меню">
+      <a href="index.html#directions">Напрями</a>
+      <a href="doctor.html">Лікарі</a>
+      <a href="prices.html">Ціни</a>
+      <a href="prices.html">Чекапи</a>
+      <a href="booking.html">Укласти декларацію</a>
+      <a href="index.html#about">Про клініку</a>
+      <a href="contacts.html">Контакти</a>
+    </nav>
+    <div class="mobile-menu__phones">
+      <a href="tel:+380930480303"><span>+38 (093) 048 03 03</span><span class="mobile-menu__call"><img src="assets/icons/phone-white.svg" alt="" width="18" height="18"></span></a>
+      <a href="tel:+380675954103"><span>+38 (067) 595 41 03</span><span class="mobile-menu__call"><img src="assets/icons/phone-white.svg" alt="" width="18" height="18"></span></a>
+    </div>
+    <div class="mobile-menu__actions">
+      <a href="booking.html" class="btn btn--primary btn--block">Записатись на прийом</a>
+      <a href="#booking" class="btn btn--secondary btn--block" data-callback>Передзвоніть мені</a>
+    </div>
+  </div>
+</header>
+
+<main class="page-subtle">
+
+<section class="bk container">
+  <nav class="crumbs" aria-label="Хлібні крихти">
+    <a href="index.html">Головна</a>
+    <img src="assets/icons/chevron-crumb.svg" alt="" width="12" height="12">
+    <span aria-current="page">Запис на прийом</span>
+  </nav>
+  <div class="page-head page-head--16">
+    <h1 class="page-title">Запис на прийом</h1>
+    <p class="lead bk__lead">Оберіть лікаря й зручний час. Адміністратор зателефонує, щоб підтвердити запис.</p>
+  </div>
+
+  <form class="bk__grid" data-online-booking novalidate>
+    <!-- STEP 1 -->
+    <div class="bk-card">
+      <div class="bk-card__head"><span class="bk-num">1</span><h2 class="h3">Оберіть лікаря</h2></div>
+      <div class="seg seg--lg" role="tablist" aria-label="Спосіб вибору">
+        <button type="button" class="seg__item is-active" role="tab" aria-selected="true" data-tab="doctors">Лікар</button>
+        <button type="button" class="seg__item" role="tab" aria-selected="false" data-tab="services">Послуга</button>
+      </div>
+
+      <div class="bk-list" data-panel="doctors">
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Спільний Віталій Ігорович" data-role="Лікар-проктолог" data-photo="assets/img/doctor-1.jpg" data-price="900 грн" checked>
+          <span class="bk-doc__photo"><img src="assets/img/doctor-1.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Спільний Віталій Ігорович</b><span>Лікар-проктолог</span><em>Вільно: завтра, 09:00</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Головина Світлана Вікторівна" data-role="Лікар-гастроентеролог" data-photo="assets/img/doctor-2.jpg" data-price="уточнить адміністратор">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-2.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Головина Світлана Вікторівна</b><span>Лікар-гастроентеролог</span><em>Вільно: завтра, 11:30</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Вилегжанин Дмитро Сергійович" data-role="Лікар-проктолог" data-photo="assets/img/doctor-3.jpg" data-price="900 грн">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-3.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Вилегжанин Дмитро Сергійович</b><span>Лікар-проктолог</span><em>Вільно: вт, 17 листопада</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Бондаревич Світлана Майславівна" data-role="Лікар-уролог" data-photo="assets/img/doctor-4.jpg" data-price="уточнить адміністратор">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-4.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Бондаревич Світлана Майславівна</b><span>Лікар-уролог</span><em>Вільно: завтра, 15:00</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc" data-extra hidden>
+          <input type="radio" name="doctor" value="Кирилова Олександра Федорівна" data-role="Лікар-проктолог" data-photo="assets/img/doctor-5.jpg" data-price="900 грн">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-5.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Кирилова Олександра Федорівна</b><span>Лікар-проктолог</span><em>Вільно: завтра, 10:00</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <button type="button" class="bk-more" aria-expanded="false" data-more>Показати всіх лікарів <img src="assets/icons/chevron-down-accent.svg" alt="" width="20" height="20"></button>
+      </div>
+
+      <div class="bk-list" data-panel="services" hidden>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Проктологія" data-price="від 900 грн"><span class="bk-doc__text"><b>Проктологія</b><span>Консультація проктолога — 900 грн</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Гінекологія"><span class="bk-doc__text"><b>Гінекологія</b><span>Консультація, огляд і план лікування</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Урологія"><span class="bk-doc__text"><b>Урологія</b><span>Консультація уролога</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="УЗД-діагностика"><span class="bk-doc__text"><b>УЗД-діагностика</b><span>Висновок лікаря в день обстеження</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Лабораторні аналізи"><span class="bk-doc__text"><b>Лабораторні аналізи</b><span>659 видів аналізів</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+      </div>
+
+      <div class="bk-help">
+        <p class="bk-help__title">Не знаєте, до кого записатися?</p>
+        <p class="caption">Залиште телефон — адміністратор зателефонує й допоможе обрати спеціаліста.</p>
+        <a href="#booking" class="bk-help__link">Передзвоніть мені</a>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="bk-card">
+      <div class="bk-card__head"><span class="bk-num">2</span><h2 class="h3">Оберіть дату й час</h2></div>
+      <div class="cal" data-calendar>
+        <div class="cal__head">
+          <p class="cal__month" data-month>Листопад 2026</p>
+          <div class="cal__arrows">
+            <button type="button" class="cal__arrow" data-prev aria-label="Попередній місяць"><img src="assets/icons/chev-r-muted.svg" alt="" width="20" height="20" style="transform:rotate(180deg)"></button>
+            <button type="button" class="cal__arrow" data-next aria-label="Наступний місяць"><img src="assets/icons/chev-r-dark.svg" alt="" width="20" height="20"></button>
+          </div>
+        </div>
+        <div class="cal__grid" data-days role="grid" aria-label="Календар"></div>
+        <p class="caption muted">Сірим — дні з вільним часом, рамкою — сьогодні. Неділя — вихідний.</p>
+      </div>
+      <div class="slots">
+        <p class="slots__date" data-date-label>Оберіть дату</p>
+        <div class="slots__group"><p class="caption muted">Ранок</p><div class="slots__row"><button type="button">09:00</button><button type="button">10:00</button><button type="button">10:30</button><button type="button">11:30</button></div></div>
+        <div class="slots__group"><p class="caption muted">День</p><div class="slots__row"><button type="button">12:30</button><button type="button">13:00</button><button type="button">15:30</button><button type="button">16:30</button></div></div>
+        <div class="slots__group"><p class="caption muted">Вечір</p><div class="slots__row"><button type="button">18:00</button><button type="button">19:00</button><button type="button">20:00</button><button type="button">20:30</button></div></div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="bk-card" id="booking">
+      <div class="bk-card__head"><span class="bk-num">3</span><h2 class="h3">Залиште контакти</h2></div>
+      <div class="form__row">
+        <label class="field"><span class="field__label">Ім'я та прізвище</span><input type="text" name="name" placeholder="Як до вас звертатися" required autocomplete="name"></label>
+        <label class="field"><span class="field__label">Телефон</span><input type="tel" name="phone" placeholder="+38 (0__) ___ __ __" required autocomplete="tel"></label>
+      </div>
+      <label class="field"><span class="field__label">Коментар (необов'язково)</span><textarea name="comment" rows="3" placeholder="Наприклад, що вас турбує"></textarea></label>
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span class="consent__box" aria-hidden="true"></span>
+        <span>Погоджуюся з <a href="#">політикою конфіденційності</a> та обробкою персональних даних</span>
+      </label>
+      <div class="bk-note"><img src="assets/icons/info.svg" alt="" width="20" height="20"><p class="caption">Телефон потрібен лише для підтвердження запису. У коментарі можна нічого не пояснювати — лікар усе уточнить на прийомі.</p></div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="bk-card bk-summary">
+      <h2 class="h3">Ваш запис</h2>
+      <div class="bk-summary__doc">
+        <span class="bk-summary__photo"><img src="assets/img/doctor-1.jpg" alt="" data-sum-photo></span>
+        <div><p class="bk-summary__name" data-sum-name>Спільний Віталій Ігорович</p><p class="caption" data-sum-role>Лікар-проктолог</p></div>
+      </div>
+      <dl class="bk-summary__details">
+        <div><dt>Дата</dt><dd data-sum-date>—</dd></div>
+        <div><dt>Час</dt><dd data-sum-time>—</dd></div>
+        <div><dt>Адреса</dt><dd>Одеса,<br> вул. Водопровідна, 2/5</dd></div>
+        <div><dt>Консультація</dt><dd data-sum-price>900 грн</dd></div>
+      </dl>
+      <div class="bk-summary__confirm">
+        <button type="submit" class="btn btn--primary btn--block btn--50">Запис підтверджую</button>
+        <p class="body2">Або зателефонуйте: <a href="tel:+380930480303" class="form__phone">+38 (093) 048 03 03</a></p>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </form>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="logo logo--lg" aria-label="Sana Vita">
+          <img class="logo__p1" src="assets/icons/logo-w-1.svg" alt="">
+          <img class="logo__p2" src="assets/icons/logo-w-2.svg" alt="">
+          <img class="logo__p3" src="assets/icons/logo-w-3.svg" alt="">
+        </a>
+        <p class="footer__muted-lg">Багатопрофільний медичний центр в Одесі</p>
+      </div>
+      <div class="footer__contacts">
+        <div class="footer__item">
+          <img src="assets/icons/phone-w.svg" alt="" width="20" height="20">
+          <div class="footer__phones">
+            <a href="tel:+380930480303">+38 (093) 048 03 03</a>
+            <a href="tel:+380675954103">+38 (067) 595 41 03</a>
+          </div>
+        </div>
+        <div class="footer__item">
+          <img src="assets/icons/mail-w.svg" alt="" width="20" height="20">
+          <a href="mailto:director@sanavita.com.ua">director@sanavita.com.ua</a>
+        </div>
+        <div class="footer__item">
+          <img src="assets/icons/pin-w.svg" alt="" width="20" height="20">
+          <div>
+            <p>Одеса, вул. Водопровідна, 2/5</p>
+            <a href="contacts.html#map" class="footer__map">Подивитися на мапі →</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__nav">
+        <nav class="footer__col" aria-label="Пацієнтам">
+          <p class="footer__heading">ПАЦІЄНТАМ</p>
+          <a href="index.html#directions">Напрями</a>
+          <a href="doctor.html">Лікарі</a>
+          <a href="prices.html">Ціни</a>
+          <a href="prices.html">Чекапи</a>
+        </nav>
+        <nav class="footer__col" aria-label="Клініка">
+          <p class="footer__heading">КЛІНІКА</p>
+          <a href="index.html#about">Про клініку</a>
+          <a href="#">Ліцензія та документи</a>
+          <a href="contacts.html">Контакти</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <div>
+        <p>ТОВ «САНА ВІТА МЕДІКАЛ», ЄДРПОУ 44018609</p>
+        <p>Ліцензія МОЗ України на медичну практику: реєстраційне досьє № 4398/21/М від 05.10.2021</p>
+      </div>
+      <p class="footer__disclaimer">Інформація на сайті має довідковий характер і не замінює консультацію лікаря.</p>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__policies"><a href="#">Політика конфіденційності</a><a href="#">Cookie</a></div>
+      <p>© 2021–2026 Sana Vita</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

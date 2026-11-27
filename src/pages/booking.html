@@ -1,0 +1,133 @@
+<!-- title: Запис на прийом онлайн — Sana Vita | desc: Оберіть лікаря, дату й зручний час. Адміністратор медичного центру Sana Vita зателефонує, щоб підтвердити запис. | nav:  -->
+<main class="page-subtle">
+
+<section class="bk container">
+  <nav class="crumbs" aria-label="Хлібні крихти">
+    <a href="index.html">Головна</a>
+    <img src="assets/icons/chevron-crumb.svg" alt="" width="12" height="12">
+    <span aria-current="page">Запис на прийом</span>
+  </nav>
+  <div class="page-head page-head--16">
+    <h1 class="page-title">Запис на прийом</h1>
+    <p class="lead bk__lead">Оберіть лікаря й зручний час. Адміністратор зателефонує, щоб підтвердити запис.</p>
+  </div>
+
+  <form class="bk__grid" data-online-booking novalidate>
+    <!-- STEP 1 -->
+    <div class="bk-card">
+      <div class="bk-card__head"><span class="bk-num">1</span><h2 class="h3">Оберіть лікаря</h2></div>
+      <div class="seg seg--lg" role="tablist" aria-label="Спосіб вибору">
+        <button type="button" class="seg__item is-active" role="tab" aria-selected="true" data-tab="doctors">Лікар</button>
+        <button type="button" class="seg__item" role="tab" aria-selected="false" data-tab="services">Послуга</button>
+      </div>
+
+      <div class="bk-list" data-panel="doctors">
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Спільний Віталій Ігорович" data-role="Лікар-проктолог" data-photo="assets/img/doctor-1.jpg" data-price="900 грн" checked>
+          <span class="bk-doc__photo"><img src="assets/img/doctor-1.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Спільний Віталій Ігорович</b><span>Лікар-проктолог</span><em>Вільно: завтра, 09:00</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Головина Світлана Вікторівна" data-role="Лікар-гастроентеролог" data-photo="assets/img/doctor-2.jpg" data-price="уточнить адміністратор">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-2.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Головина Світлана Вікторівна</b><span>Лікар-гастроентеролог</span><em>Вільно: завтра, 11:30</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Вилегжанин Дмитро Сергійович" data-role="Лікар-проктолог" data-photo="assets/img/doctor-3.jpg" data-price="900 грн">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-3.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Вилегжанин Дмитро Сергійович</b><span>Лікар-проктолог</span><em>Вільно: вт, 17 листопада</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc">
+          <input type="radio" name="doctor" value="Бондаревич Світлана Майславівна" data-role="Лікар-уролог" data-photo="assets/img/doctor-4.jpg" data-price="уточнить адміністратор">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-4.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Бондаревич Світлана Майславівна</b><span>Лікар-уролог</span><em>Вільно: завтра, 15:00</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <label class="bk-doc" data-extra hidden>
+          <input type="radio" name="doctor" value="Кирилова Олександра Федорівна" data-role="Лікар-проктолог" data-photo="assets/img/doctor-5.jpg" data-price="900 грн">
+          <span class="bk-doc__photo"><img src="assets/img/doctor-5.jpg" alt=""></span>
+          <span class="bk-doc__text"><b>Кирилова Олександра Федорівна</b><span>Лікар-проктолог</span><em>Вільно: завтра, 10:00</em></span>
+          <span class="bk-radio" aria-hidden="true"></span>
+        </label>
+        <button type="button" class="bk-more" aria-expanded="false" data-more>Показати всіх лікарів <img src="assets/icons/chevron-down-accent.svg" alt="" width="20" height="20"></button>
+      </div>
+
+      <div class="bk-list" data-panel="services" hidden>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Проктологія" data-price="від 900 грн"><span class="bk-doc__text"><b>Проктологія</b><span>Консультація проктолога — 900 грн</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Гінекологія"><span class="bk-doc__text"><b>Гінекологія</b><span>Консультація, огляд і план лікування</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Урологія"><span class="bk-doc__text"><b>Урологія</b><span>Консультація уролога</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="УЗД-діагностика"><span class="bk-doc__text"><b>УЗД-діагностика</b><span>Висновок лікаря в день обстеження</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+        <label class="bk-doc bk-doc--svc"><input type="radio" name="service" value="Лабораторні аналізи"><span class="bk-doc__text"><b>Лабораторні аналізи</b><span>659 видів аналізів</span></span><span class="bk-radio" aria-hidden="true"></span></label>
+      </div>
+
+      <div class="bk-help">
+        <p class="bk-help__title">Не знаєте, до кого записатися?</p>
+        <p class="caption">Залиште телефон — адміністратор зателефонує й допоможе обрати спеціаліста.</p>
+        <a href="#booking" class="bk-help__link">Передзвоніть мені</a>
+      </div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div class="bk-card">
+      <div class="bk-card__head"><span class="bk-num">2</span><h2 class="h3">Оберіть дату й час</h2></div>
+      <div class="cal" data-calendar>
+        <div class="cal__head">
+          <p class="cal__month" data-month>Листопад 2026</p>
+          <div class="cal__arrows">
+            <button type="button" class="cal__arrow" data-prev aria-label="Попередній місяць"><img src="assets/icons/chev-r-muted.svg" alt="" width="20" height="20" style="transform:rotate(180deg)"></button>
+            <button type="button" class="cal__arrow" data-next aria-label="Наступний місяць"><img src="assets/icons/chev-r-dark.svg" alt="" width="20" height="20"></button>
+          </div>
+        </div>
+        <div class="cal__grid" data-days role="grid" aria-label="Календар"></div>
+        <p class="caption muted">Сірим — дні з вільним часом, рамкою — сьогодні. Неділя — вихідний.</p>
+      </div>
+      <div class="slots">
+        <p class="slots__date" data-date-label>Оберіть дату</p>
+        <div class="slots__group"><p class="caption muted">Ранок</p><div class="slots__row"><button type="button">09:00</button><button type="button">10:00</button><button type="button">10:30</button><button type="button">11:30</button></div></div>
+        <div class="slots__group"><p class="caption muted">День</p><div class="slots__row"><button type="button">12:30</button><button type="button">13:00</button><button type="button">15:30</button><button type="button">16:30</button></div></div>
+        <div class="slots__group"><p class="caption muted">Вечір</p><div class="slots__row"><button type="button">18:00</button><button type="button">19:00</button><button type="button">20:00</button><button type="button">20:30</button></div></div>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div class="bk-card" id="booking">
+      <div class="bk-card__head"><span class="bk-num">3</span><h2 class="h3">Залиште контакти</h2></div>
+      <div class="form__row">
+        <label class="field"><span class="field__label">Ім'я та прізвище</span><input type="text" name="name" placeholder="Як до вас звертатися" required autocomplete="name"></label>
+        <label class="field"><span class="field__label">Телефон</span><input type="tel" name="phone" placeholder="+38 (0__) ___ __ __" required autocomplete="tel"></label>
+      </div>
+      <label class="field"><span class="field__label">Коментар (необов'язково)</span><textarea name="comment" rows="3" placeholder="Наприклад, що вас турбує"></textarea></label>
+      <label class="consent">
+        <input type="checkbox" name="consent" required>
+        <span class="consent__box" aria-hidden="true"></span>
+        <span>Погоджуюся з <a href="#">політикою конфіденційності</a> та обробкою персональних даних</span>
+      </label>
+      <div class="bk-note"><img src="assets/icons/info.svg" alt="" width="20" height="20"><p class="caption">Телефон потрібен лише для підтвердження запису. У коментарі можна нічого не пояснювати — лікар усе уточнить на прийомі.</p></div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="bk-card bk-summary">
+      <h2 class="h3">Ваш запис</h2>
+      <div class="bk-summary__doc">
+        <span class="bk-summary__photo"><img src="assets/img/doctor-1.jpg" alt="" data-sum-photo></span>
+        <div><p class="bk-summary__name" data-sum-name>Спільний Віталій Ігорович</p><p class="caption" data-sum-role>Лікар-проктолог</p></div>
+      </div>
+      <dl class="bk-summary__details">
+        <div><dt>Дата</dt><dd data-sum-date>—</dd></div>
+        <div><dt>Час</dt><dd data-sum-time>—</dd></div>
+        <div><dt>Адреса</dt><dd>Одеса,<br> вул. Водопровідна, 2/5</dd></div>
+        <div><dt>Консультація</dt><dd data-sum-price>900 грн</dd></div>
+      </dl>
+      <div class="bk-summary__confirm">
+        <button type="submit" class="btn btn--primary btn--block btn--50">Запис підтверджую</button>
+        <p class="body2">Або зателефонуйте: <a href="tel:+380930480303" class="form__phone">+38 (093) 048 03 03</a></p>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </div>
+    </div>
+  </form>
+</section>
+
+</main>

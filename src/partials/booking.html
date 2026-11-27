@@ -1,0 +1,50 @@
+<!-- ============ BOOKING ============ -->
+<section class="booking-wrap" id="booking">
+  <div class="container">
+    <div class="booking">
+      <div class="booking__text">
+        <div class="avatars">
+          <img src="assets/img/avatar-1.png" alt="" width="62" height="62">
+          <img src="assets/img/avatar-2.png" alt="" width="62" height="62">
+          <img src="assets/img/avatar-3.png" alt="" width="62" height="62">
+        </div>
+        <h2 class="h2">Запишіться на прийом</h2>
+        <p class="lead">Не знаєте, до якого лікаря звернутися? Адміністратор зателефонує, допоможе обрати спеціаліста й зручний час.</p>
+      </div>
+      <form class="form" data-booking-form novalidate>
+        <div class="form__row">
+          <label class="field">
+            <span class="field__label">Ім'я та прізвище</span>
+            <input type="text" name="name" placeholder="Як до вас звертатися" required autocomplete="name">
+          </label>
+          <label class="field">
+            <span class="field__label">Телефон</span>
+            <input type="tel" name="phone" placeholder="+38 (0__) ___ __ __" required autocomplete="tel">
+          </label>
+        </div>
+        <button type="button" class="form__toggle" aria-expanded="false" aria-controls="datetime">Обрати зручну дату й час <img src="assets/icons/chevron-accent.svg" alt="" width="20" height="20"></button>
+        <div class="form__row" id="datetime" hidden>
+          <label class="field">
+            <span class="field__label">Дата</span>
+            <input type="date" name="date">
+          </label>
+          <label class="field">
+            <span class="field__label">Час</span>
+            <input type="time" name="time" min="09:00" max="22:00">
+          </label>
+        </div>
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          <span class="consent__box" aria-hidden="true"></span>
+          <span>Погоджуюся з <a href="#">політикою конфіденційності</a> та обробкою персональних даних</span>
+        </label>
+        <div class="form__submit">
+          <button type="submit" class="btn btn--primary">Записатись на прийом</button>
+          <p class="body2">Або зателефонуйте: <a href="tel:+380930480303" class="form__phone">+38 (093) 048 03 03</a></p>
+        </div>
+        <p class="form__msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
